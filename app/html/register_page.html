@@ -1,0 +1,71 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SculpIT Fitness</title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<!-- 
+To learn more about the conditional comments around the html tags at the top of the file:
+paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
+
+Do the following if you're using your customized build of modernizr (http://www.modernizr.com/):
+* insert the link to your js here
+* remove the link below to the html5shiv
+* add the "no-js" class to the html tags at the top
+* you can also remove the link to respond.min.js if you included the MQ Polyfill in your modernizr build 
+-->
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+
+<script type="text/javascript">
+		function goToRegisterPage() {
+			console.log("signup called")
+			window.location = "register_page_submit.html";
+		}
+		
+		
+	</script>
+	
+
+</head>
+<body>
+     
+<div class="gridContainer clearfix">
+  <div id="div1" class="fluid">
+    
+    <div class="tHeader">  
+    <span class="tTitleLmenu">Sign Up    <span class="pageCount">1/2</span>
+</span>
+ </div>
+    <div class="mainGrid">
+      <div id="input_container">
+        <div class="profilePic"><img src="img/pro_pic.png" alt=""/></div>
+        <input type="text" id="input1" placeholder="First Name" class="inputTfldRegs" >
+        <input type="text" id="input2" placeholder="Last Name" class="inputTfldRegs" >
+        <input type="text" id="input3" placeholder="Email Address" class="inputTfldReg" >
+        <input type="text" id="input4" placeholder="Password" class="inputTfldReg" >
+        <input type="text" id="input5" placeholder="Confirm Password" class="inputTfldReg" >
+		<input type="text" id="input89" placeholder="Date of Birth" class="tfDob"  >
+        <input type="text" id="input7" placeholder="Gender" class="tfGen" >
+        <div class="divider"></div>
+ 
+</div>
+      </div>
+    </div>
+            <div class="footBtn"><button type="button" class="footRegBtn" onclick="goToRegisterPage()">Next</button>
+
+  </div>
+</div>
+
+</body>
+</html>
